@@ -154,8 +154,19 @@ footer div{
         height: 400px;
     }
 
+    .hero{
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+    .hero h1{
+        text-align: center;
+    }
+
     .nav-links{
         float: left;
+        padding: 0px;
     }
 
     .nav-links ul{
@@ -166,12 +177,9 @@ footer div{
         font-size: 1.5rem;
 
     }
-
     .nav-links a{
-        padding: 30px;
+        padding: 20px;
     }
-
-
     .box-container{
     grid-template-columns: 1fr;
     }
