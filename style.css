@@ -19,6 +19,17 @@ body{
     padding: 0px;
     justify-content: space-between;
     margin-bottom: 20px;
+    animation: slideDown 1s ease-out forwards;
+}
+@keyframes slideDown{
+    from{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 .logo{
     font-size: 30px;
@@ -55,6 +66,24 @@ transition: 0.3s ease-in;
     padding: 0px;
     justify-content: center;
     justify-items: center;
+    animation: slideUp 1.2s ease-out forwards;
+    animation-delay: 0.3s;
+
+}
+.navigation, .hero{
+    opacity: 0;
+    transform: translateY(0);
+    animation-fill-mode: forwards;
+}
+@keyframes slideUp{
+    from{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 .hero h1{
     font-size: 2.5rem;
